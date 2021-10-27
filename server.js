@@ -22,7 +22,7 @@ app.use((error, req, res, next) => {
 
 //Variables
 const port = 5000;
-const uri =
+const uri = 
   `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.7mk7g.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 
@@ -50,8 +50,6 @@ mongoose
   .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
   })
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
