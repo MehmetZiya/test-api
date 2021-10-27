@@ -1,0 +1,8 @@
+{
+    "env" : {
+        "DB_USER": "mehmet",
+        "DB_PASSWORD": "mUeCdejLoQwXmPxB",
+        "DB_NAME": "radioApp",
+        "JWT_KEY": "mySecret-Key"
+    }
+}
